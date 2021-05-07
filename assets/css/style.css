@@ -1,26 +1,65 @@
+/* GIVEN I need to sample a potential employee's previous work */
+/* WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport */
+
+
+
 * {
     margin: 0;
     padding: 0;
+    
+    
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url();
+}
+
+.sticky {
     
 }
 
 header {
     /* width: 90%; */
     /* height: 50px; */
+    background-image: url("../../assets/images/bubbles.jpg");
     padding: 3%;
     background-color: lightblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items:center;
+    border-bottom: 3px solid darkblue;
     
-    
-    
+}
+
+.my-image {
+    background-size: cover;
+    width: 30%;
+    min-height: 50px;
+    padding: 50px 100px;
+    border: 5px solid black;
+    margin-left: 600px;
+    margin-top: 20px;
 }
     
 
@@ -31,8 +70,10 @@ h1 {
     /* line-height: 0px; */
     padding-left: 50px;
     text-transform: uppercase;
-    
+}
 
+h2 {
+    font-size: 30px;
 }
 
 nav {
@@ -40,12 +81,13 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
 
 li {
     display:inline-block;
     padding: 5px 15px 5px 15px;
+    color: darkblue;
+    text-transform: uppercase;  
     
 }
 
@@ -60,33 +102,10 @@ li a {
 
 a:hover {
     color: red;
-
-
-
-
 }
 
-main {
-    border: 2px solid black;
-    position:relative;
-
-}
-
-section {
-    
-}
-
-#contact-me {
-    
-
-}
-
-.first-image {
-    width: 100%;
-    padding: 200px 200px;
-    
-    
-
+.my-work {
+    margin-left: 20px;
 }
 
 .flex-container {
@@ -94,30 +113,102 @@ section {
     flex-wrap: wrap;
     display:inline-block;
     justify-content:center;
-   
-
 }
 
 .flex-item {
     display:flex;
 }
 
+.first-image {
+   
+}
 
 .lead-work {
     background-image: url("../../assets/images/Capture.png");
+    background-size: cover;
     width: 100%;
-    
-    padding: 200px 200px;
+    padding: 300px 150px;
     border: 5px solid black;
-    
-    
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #contact-me {
     display:flex;
     flex-wrap: wrap;
+    padding: 100px 0px;
+    text-align: center;
+    width: 100%;
+    justify-content:space-evenly;
+    background-color: lightblue;
+    padding: 30px;
+    font-size: 1.2em;
+    text-transform: uppercase; 
+    color: darkblue;
     
-
+  
 }
 
+#contact-me li {
+    background-image: url()
+    
+}
+
+#about-me {
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+.about-text {
+    padding: 20px 20px;
+    margin-left: 5px;
+}
+
+#my-work {
+    margin-left: 10px;
+}
+
+.work-2 {
+    font-size: 30px;
+    border: 3px solid black; 
+    width: 20%;
+    padding: 5% 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.work-3 {
+    font-size: 30px;
+    border: 3px solid black; 
+    width: 20%;
+    padding: 5% 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.work-4 {
+    font-size: 30px;
+    border: 3px solid black; 
+    width: 20%;
+    padding: 5% 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.work-5 {
+    font-size: 30px;
+    border: 3px solid black; 
+    width: 20%;
+    padding: 5% 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+footer {
+    background-image: url("../../assets/images/bubbles.jpg");
+    border-top: 3px solid darkblue;
+}

@@ -12,8 +12,6 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport */
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +39,7 @@ body {
 header {
     /* width: 90%; */
     /* height: 50px; */
-    background-image: url("../../assets/images/bubbles.jpg");
+    background-image: url("../images/bubbles.jpg");
     padding: 3%;
     background-color: lightblue;
     display: flex;
@@ -53,13 +51,17 @@ header {
 }
 
 .my-image {
+    display: block;
     background-size: cover;
-    width: 30%;
-    min-height: 50px;
-    padding: 50px 100px;
-    border: 5px solid black;
-    margin-left: 600px;
-    margin-top: 20px;
+    width: 10%;
+    min-height: 100px;
+    min-width: 100px;
+    margin-top: 10px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
     
 
@@ -77,7 +79,7 @@ h2 {
 }
 
 nav {
-    margin-left: auto;
+  
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -100,12 +102,12 @@ li a {
     text-transform: uppercase;   
 }
 
-a:hover {
+li a:hover {
     color: red;
 }
 
 .my-work {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .flex-container {
@@ -119,15 +121,27 @@ a:hover {
     display:flex;
 }
 
+#flex-item-label {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    
+}
+
+
 .first-image {
    
 }
 
 .lead-work {
-    background-image: url("../../assets/images/Capture.png");
+    background-image: url("../images/Capture.png");
     background-size: cover;
     width: 100%;
-    padding: 300px 150px;
+    min-height: 600px;
+    min-width: 600px;
     border: 5px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -169,46 +183,106 @@ a:hover {
 }
 
 .work-2 {
-    font-size: 30px;
+    background-image: url("../images/work2.jpg");
+    background-size: cover;
+    font-size: 25px;
     border: 3px solid black; 
     width: 20%;
-    padding: 5% 5%;
+    padding: 20% 20%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    
+
 }
 
+
+
 .work-3 {
-    font-size: 30px;
+    background-image: url("../images/work3.jpg");
+    background-size: cover;
+    font-size: 25px;
     border: 3px solid black; 
     width: 20%;
-    padding: 5% 5%;
+    padding: 20% 20%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    color: white;
 }
 
 .work-4 {
-    font-size: 30px;
+    background-image: url("../images/work4.jpg");
+    background-size: cover;
+    font-size: 25px;
     border: 3px solid black; 
     width: 20%;
-    padding: 5% 5%;
+    padding: 20% 20%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    color: white;
+    background-color: black;
 }
 
 .work-5 {
-    font-size: 30px;
+    background-image: url("../images/work5.jpg");
+    background-size: cover;
+    font-size: 25px;
     border: 3px solid black; 
     width: 20%;
-    padding: 5% 5%;
+    padding: 20% 20%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    
+}
+
+#flex-item-box2 span {
+    background-color: black;
+    color: white;
+}
+
+#flex-item-box3 span {
+    background-color: black;
+    color: white;
+}
+
+#flex-item-box4 span {
+    background-color: black;
+    color: white;
+}
+
+#flex-item-box5 span {
+    background-color: black;
+    color: white;
+}
+
+#flex-item-box5 span {
+    background-color: black;
+    color: white;
 }
 
 footer {
-    background-image: url("../../assets/images/bubbles.jpg");
+    background-image: url("../assets/images/bubbles.jpg");
     border-top: 3px solid darkblue;
 }
+
+ @media screen and (max-width: 576px) {
+    li {
+    display:block;
+    }
+    #contact-me h2 {
+        width: 100%;
+    }
+    nav {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .lead-work {
+         min-width: 400px;
+    }
+
+  }

@@ -1,16 +1,4 @@
-/* GIVEN I need to sample a potential employee's previous work */
-/* WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport */
+
 
 * {
     margin: 0;
@@ -18,7 +6,7 @@ THEN I am presented with a responsive layout that adapts to my viewport */
     
     
 }
-
+/* HTML and Body */
 html, body {
     width: 100%;
     height: 100%;
@@ -33,9 +21,11 @@ body {
 }
 
 .sticky {
-    
-}
 
+}
+/* End of HTML and Body */
+
+/* Start of Header and Vavbar */
 header {
     /* width: 90%; */
     /* height: 50px; */
@@ -50,21 +40,6 @@ header {
     
 }
 
-.my-image {
-    display: block;
-    background-size: cover;
-    width: 10%;
-    min-height: 100px;
-    min-width: 100px;
-    margin-top: 10px;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-}
-    
-
 h1 {
     color: darkblue;
     font-size: 30px; 
@@ -78,6 +53,7 @@ h2 {
     font-size: 30px;
 }
 
+/* Start of Navbar */
 nav {
   
     display: flex;
@@ -90,7 +66,6 @@ li {
     padding: 5px 15px 5px 15px;
     color: darkblue;
     text-transform: uppercase;  
-    
 }
 
 li a {
@@ -105,7 +80,34 @@ li a {
 li a:hover {
     color: red;
 }
+/* End of Header and Navbar */
 
+/* My image (Chris Granata) */
+.my-image {
+    display: block;
+    background-size: cover;
+    width: 10%;
+    min-height: 100px;
+    min-width: 100px;
+    margin-top: 10px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Start of About Me section */
+#about-me {
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+.about-text {
+    padding: 20px 20px;
+    margin-left: 5px;
+}
+/* End of About me section */
+
+/* Start of Work section */
 .my-work {
     margin-left: 0px;
 }
@@ -121,6 +123,7 @@ li a:hover {
     display:flex;
 }
 
+/* Main Work-1 Code refactoring */
 #flex-item-label {
     margin-right: auto;
     margin-top: auto;
@@ -128,7 +131,6 @@ li a:hover {
     padding: 15px;
     color: white;
     background-color: black;
-    
 }
 
 
@@ -147,41 +149,12 @@ li a:hover {
     margin-bottom: 10px;
 }
 
-#contact-me {
-    display:flex;
-    flex-wrap: wrap;
-    padding: 100px 0px;
-    text-align: center;
-    width: 100%;
-    justify-content:space-evenly;
-    background-color: lightblue;
-    padding: 30px;
-    font-size: 1.2em;
-    text-transform: uppercase; 
-    color: darkblue;
-    
-  
-}
-
-#contact-me li {
-    background-image: url()
-    
-}
-
-#about-me {
-    padding: 20px 0;
-    margin-left: 10px;
-}
-
-.about-text {
-    padding: 20px 20px;
-    margin-left: 5px;
-}
-
 #my-work {
     margin-left: 10px;
 }
+/* End Main Work-1 Code refactoring */
 
+/* Start of Work-2 */
 .work-2 {
     background-image: url("../images/work2.jpg");
     background-size: cover;
@@ -194,12 +167,9 @@ li a:hover {
     margin-left: 10px;
     color: white;
     text-decoration: none;
-    
-
 }
 
-
-
+/* Start Work-3 */
 .work-3 {
     background-image: url("../images/work3.jpg");
     background-size: cover;
@@ -213,6 +183,7 @@ li a:hover {
     color: white;
 }
 
+/* Start Work-4 */
 .work-4 {
     background-image: url("../images/work4.jpg");
     background-size: cover;
@@ -227,6 +198,7 @@ li a:hover {
     background-color: black;
 }
 
+/* Start Work-5 */
 .work-5 {
     background-image: url("../images/work5.jpg");
     background-size: cover;
@@ -259,17 +231,35 @@ li a:hover {
     background-color: black;
     color: white;
 }
+/* End Work section */
 
-#flex-item-box5 span {
-    background-color: black;
-    color: white;
-}
 
+/* Start of Footer with Contact Me section */
 footer {
     background-image: url("../assets/images/bubbles.jpg");
     border-top: 3px solid darkblue;
 }
 
+#contact-me {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+    text-align: center;
+    width: 100%;
+    justify-content:space-evenly;
+    background-color: lightblue;
+    padding: 30px;
+    font-size: 1.2em;
+    text-transform: uppercase; 
+    color: darkblue;
+}
+
+#contact-me li {
+    background-image: url()
+}
+/* End of Footer with Contact Me section */
+
+/* Media Query */
  @media screen and (max-width: 576px) {
     li {
     display:block;
